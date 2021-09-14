@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(()=>
+        {
+            $("button#btn1").click(()=>
+            {
+                $("h1").text("Welcome To Jquery")
+                $("div").html("<h2 style='color:red'>Welcome To React JS</h2>")
+            })
+            $("button#btn2").click(()=>$("div").html("<h2 style='color:red'>Welcome To React JS</h2>"))
+            $("button#sub").click(()=>$("input").val("Raj"))
+            $("button#btn3").click(()=>$("a").attr("href","http://www.facebook.com"))
+
+
+        })
+    </script>
+</head>
+<body>
+    <h1>Welcome To Angular</h1>
+    <div>
+
+    </div>
+    <pre>
+        <input/> <button id="sub">Subscribe</button>
+    </pre>
+    <a target="_blank" href="http://www.google.com">Link</a>
+    <button id="btn1">Add Content</button>
+    <button id="btn2">Add HTML</button>
+    <button id="btn3">Change URL</button>
+</body>
+</html>

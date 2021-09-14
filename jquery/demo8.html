@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(()=>
+        {
+            $("button#btnslideup").click(()=>{
+            $("div#divid1").slideUp(6000,function()
+            {
+                alert("slide up completed")
+            })
+        })
+        $("button#btnslidedown").click(()=>{
+            $("div#divid2").slideDown(6000,function()
+            {
+                alert("slide Down completed")
+            })
+        })
+        $("button#btnslidetoggle").click(()=>{
+            $("div#divid3>p").slideToggle(6000,function()
+            {
+                alert("slide Toggle completed")
+            })
+        })
+        })
+    </script>
+
+</head>
+<body>
+
+    <div id="divid1">
+        <h3>Welcome To Jquery</h3>
+        <hr/>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iure corrupti itaque deserunt veritatis possimus nisi iusto accusamus libero quam quos delectus alias mollitia odio officiis reiciendis cum, cumque dolorem?</p>
+    </div>
+    <div id="divid2" style="display: none;">
+        <h3>Welcome To Jquery</h3>
+        <hr/>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iure corrupti itaque deserunt veritatis possimus nisi iusto accusamus libero quam quos delectus alias mollitia odio officiis reiciendis cum, cumque dolorem?</p>
+    </div>
+    <div id="divid3">
+        <h3 style="background-color: blue;color: white;">Welcome To Jquery</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tenetur debitis nam sunt iure corrupti soluta, dolore illo animi ad consequuntur enim quis magni quisquam dolores sit non. Repudiandae, adipisci.</p>
+    </div>
+    <button id="btnslideup">Slide Up</button>
+    <button id="btnslidedown">Slide Down</button>
+    <button id="btnslidetoggle">Slide Toggle</button>
+
+</body>
+</html>

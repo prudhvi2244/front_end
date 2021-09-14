@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(()=>
+        {
+            $("button#id1").click(()=>
+            {
+                alert($("h1").text())
+            })
+            $("button#id2").click(()=>
+            {
+                alert($("h2").html())
+            })
+            $("button#id3").click(()=>
+            {
+                alert($("input").val())
+            })
+            $("button#id4").click(()=>
+            {
+                alert($("a").attr("href"))
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1>Welcome To Jquery</h1>
+    <h2>Welcome To Bootstrap 
+    <b> and Angular</b>
+    <a href="http://www.google.com"></a>
+    </h2>
+    <input value="Prudhvi Raj"/>
+    <button id="id1">Get Content-1</button>
+    <button id="id2">Get Content-2</button>
+    <button id="id3">Get Input Value</button>
+    <button id="id4">Get Attribute Value</button>
+</body>
+</html>

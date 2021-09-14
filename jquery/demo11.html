@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("button#btn1").click(()=>
+            {
+                $("h1").append(" Jquery")
+            })
+            $("button#btn2").click(()=>
+            {
+                $("h2").prepend(" Good Morning ")
+            })
+            $("button#btn3").click(()=>
+            {
+                $("div").after("<h3 style='background-color:yellow'>Welcone To Node JS</h3>")
+            })
+            $("button#btn4").click(()=>
+            {
+                $("div").before("<h3 style='background-color:green'>Welcone To Node JS</h3>")
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1>Welcome To</h1>
+    <h2>Students</h2>
+    <div style="background-color: blue;width: 200px;">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et quam incidunt iste. Nostrum voluptates alias expedita adipisci fugiat eos sint quos inventore fugit commodi. Repellendus repellat quidem quas illo magni?</p>
+    </div>
+    <button id="btn1">Append Content</button>
+    <button id="btn2">Prepend Content</button>
+    <button id="btn3">After Element</button>
+    <button id="btn4">Before Element</button>
+</body>
+</html>

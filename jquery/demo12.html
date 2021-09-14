@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("button#id1").click(function()
+            {
+                $("div#id1").remove()
+            })
+            $("button#id2").click(function()
+            {
+                $("div#id2").empty()
+            })
+        })
+        </script>
+</head>
+<body>
+    
+    <div  id="id1" style="background-color: yellow;color: red;">
+        <h3>Welcome To JQuery</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ducimus at inventore quos illo iusto! Necessitatibus at expedita minima cupiditate natus. Dolore sapiente consequatur inventore enim error unde obcaecati nam.</p>
+    </div>
+    <div  id="id2" style="background-color: green;color: white;height: 300px;">
+        <h3>Welcome To JQuery</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ducimus at inventore quos illo iusto! Necessitatibus at expedita minima cupiditate natus. Dolore sapiente consequatur inventore enim error unde obcaecati nam.</p>
+    </div>
+    <button id="id1">Remove</button>
+    <button id="id2">Empty</button>
+</body>
+</html>

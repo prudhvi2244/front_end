@@ -1,0 +1,67 @@
+
+Jquery Events:
+=============================
+* All the different visitor's actions that a web page can respond to are called Events
+1)click
+2)dblclick
+3)mouseenter
+4)mouseleave
+5)hover
+6)focus
+7)blur
+
+JQuery Effects: Hide and Show
+=====================
+hide()   : $(selector).hide(speed,callback)
+show()   : $(selector).show(speed,callback)
+toggle() : $(selector).toggle(speed,callback)
+
+Jquery Effects : Fading
+===========================================
+* With Jquery you can fade elements in and out of visibility
+
+1)fadeIn()     : $(selector).fadeIn(speed,callback)
+2)fadeOut()    : $(selector).fadeOut(speed,callback)
+3)fadeToggle() : $(selector).fadeToggle(speed,callback)
+4)fadeTo()     : fadeTo() method allows fading to a given opacity ( 0 to 1 )
+                 $(selector).fadeTo(speed,opacity,callback)
+
+
+
+Jquery Effects : Sliding:
+==========================================
+* The Jquery slide methods are used to slide elements up and down
+1)slideUp()     : $(selector).slideUp(speed,callback)
+2)slideDown()   : $(selector).slideDown(speed,callback)
+3)slideToggle() : $(selector).slideToggle(speed,callback)
+
+
+Jquery : Get Content and Attributes
+==============================================
+1)text()
+2)html()
+3)val()
+4)attr() 
+
+
+Jquery : Set Content and Attributes
+==============================================
+1)text()
+2)html()
+3)val()
+4)attr() 
+
+
+
+
+JQuery Elements:
+======================
+1)append()  : Inserts content at the end of the selected elements
+2)prepend() : Inserts content at the beginning of the selected elements
+3)after()   : Inserts content after the selected elements
+4)before()  : Inserts content before the selected elements
+
+Jquery Remove Elements:
+==========================
+1)remove() : Removes the selected element ( and its child elements)
+2)empty()  : Removes the child elements from selected elements
